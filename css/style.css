@@ -100,7 +100,7 @@ button:hover {
     }
     .counter {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
     button {
         width: 100px;
