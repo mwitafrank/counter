@@ -1,0 +1,46 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    
+    body {
+        background-color: aqua;
+    }
+    
+    .counter {
+        width: 50%;
+        height: 50%;
+        background-color: blueviolet;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding: 70px 0;
+        border-radius: 3rem;
+    }
+    
+    .counter .count {
+        font-size: 3rem;
+        color: burlywood;
+    }
+    
+    .counter .nom {
+        font-size: 8rem;
+        padding-top: 30px;
+        color: burlywood;
+    }
+    
+    @media(max-width:400px) {
+        width: 100%;
+    }
+    
+    @media(max-width:768px) {
+        width: 100%;
+    }
+    
+    @media(max-width:1200px) {
+        width: 100%;
+    }
