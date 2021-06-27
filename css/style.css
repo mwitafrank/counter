@@ -1,73 +1,118 @@
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                font-family: sans-serif;
-            }
-            
-            body {
-                background-color: aqua;
-            }
-            
-            .counter {
-                width: 500px;
-                height: 500px;
-                background-color: blueviolet;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                text-align: center;
-                padding: 70px 0;
-                border-radius: 3rem;
-            }
-            
-            .counter .count {
-                font-size: 3rem;
-                color: burlywood;
-            }
-            
-            .counter .nom {
-                font-size: 8rem;
-                padding-top: 30px;
-                color: burlywood;
-            }
-            
-            @media(max-width:567px) {
-                .counter {
-                    width: 600vw;
-                    height: 600vh;
-                }
-                body {
-                    padding: 0;
-                    margin: 0;
-                }
-                html {
-                    font-size: 40%;
-                }
-                .count {
-                    font-size: 1.5rem;
-                }
-            }
-            
-            @media(max-width:768px) {
-                .counter {
-                    width: 80%;
-                    height: 500px;
-                }
-                html {
-                    font-size: 50%;
-                }
-                .count {
-                    font-size: 2rem;
-                }
-            }
-            
-            @media(max-width:1200px) {
-                .counter {
-                    width: 50%;
-                }
-                html {
-                    font-size: 60%;
-                }
-            }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: aqua;
+}
+
+.counter {
+    width: 500px;
+    height: 500px;
+    background-color: blueviolet;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 70px 0;
+    border-radius: 3rem;
+}
+
+.counter .count {
+    font-size: 3rem;
+    color: burlywood;
+}
+
+.counter .nom {
+    font-size: 8rem;
+    padding-top: 30px;
+    color: burlywood;
+}
+
+button {
+    width: 200px;
+    height: 45px;
+    background-color: #000;
+    padding: 5px 5px;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+button:hover {
+    width: 198px;
+    height: 43px;
+    background-color: #222;
+}
+
+
+/* media queries*/
+
+@media(max-width:1200px) {
+    html {
+        font-size: 70%;
+    }
+    .home {
+        padding: 1rem 5rem;
+    }
+    button {
+        margin-top: 30px;
+    }
+    .counter .count {
+        padding-top: 40px;
+    }
+}
+
+@media(max-width:991px) {
+    body {
+        padding: 0;
+    }
+}
+
+@media(max-width:768px) {
+    html {
+        font-size: 100%;
+    }
+    .counter {
+        width: 100%;
+    }
+    button {
+        margin-top: 40px;
+    }
+}
+
+@media(max-width:400px) {
+    html {
+        font-size: 50%;
+    }
+    .header {
+        width: 100vw;
+    }
+    .heading {
+        margin: 0;
+    }
+    .counter {
+        width: 100%;
+        height: auto;
+    }
+    button {
+        width: 100px;
+        height: 25px;
+        margin-top: 10px;
+    }
+    .counter .count {
+        font-size: 2rem;
+        color: burlywood;
+    }
+    .counter .nom {
+        font-size: 6rem;
+        color: burlywood;
+    }
+}
