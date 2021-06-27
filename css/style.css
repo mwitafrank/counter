@@ -1,69 +1,73 @@
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: sans-serif;
-        }
-        
-        body {
-            background-color: aqua;
-        }
-        
-        .counter {
-            width: 500px;
-            height: 500px;
-            background-color: blueviolet;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            padding: 70px 0;
-            border-radius: 3rem;
-        }
-        
-        .counter .count {
-            font-size: 3rem;
-            color: burlywood;
-        }
-        
-        .counter .nom {
-            font-size: 8rem;
-            padding-top: 30px;
-            color: burlywood;
-        }
-        
-        @media(max-width:400px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: sans-serif;
+            }
+            
+            body {
+                background-color: aqua;
+            }
+            
             .counter {
-                width: 100%;
-                height: 300px;
-            }
-            html {
-                font-size: 40%;
-            }
-            .count {
-                font-size: 1.5rem;
-            }
-        }
-        
-        @media(max-width:768px) {
-            .counter {
-                width: 80%;
+                width: 500px;
                 height: 500px;
+                background-color: blueviolet;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                padding: 70px 0;
+                border-radius: 3rem;
             }
-            html {
-                font-size: 50%;
+            
+            .counter .count {
+                font-size: 3rem;
+                color: burlywood;
             }
-            .count {
-                font-size: 2rem;
+            
+            .counter .nom {
+                font-size: 8rem;
+                padding-top: 30px;
+                color: burlywood;
             }
-        }
-        
-        @media(max-width:1200px) {
-            .counter {
-                width: 50%;
+            
+            @media(max-width:567px) {
+                .counter {
+                    width: 600vw;
+                    height: 600vh;
+                }
+                body {
+                    padding: 0;
+                    margin: 0;
+                }
+                html {
+                    font-size: 40%;
+                }
+                .count {
+                    font-size: 1.5rem;
+                }
             }
-            html {
-                font-size: 60%;
+            
+            @media(max-width:768px) {
+                .counter {
+                    width: 80%;
+                    height: 500px;
+                }
+                html {
+                    font-size: 50%;
+                }
+                .count {
+                    font-size: 2rem;
+                }
             }
-        }
+            
+            @media(max-width:1200px) {
+                .counter {
+                    width: 50%;
+                }
+                html {
+                    font-size: 60%;
+                }
+            }
